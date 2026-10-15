@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <style>
+
+form{
+    background: #b49797;
+    margin: auto;
+    border:5px solid #201983;
+    padding: 20px;
+    width: 15%;
+}
+body{
+    background: #000;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mirema{
+    background: hsl(51, 75%, 46%);
+}
+label{
+    color: #F5B52E;
+}
+.kinoo{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+button{
+    width: 100%;
+    border-color: #201983;
+    padding: 16px;
+    color: #867349;
+    border-radius: 10px;
+}
+
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="names">Names</label>
+        <input class="kinoo" type="text" required id="names" name="full_name" placeholder="Pyalo_Jnr" class="mirema">
+
+        <label for="email">Email</label>
+        <input class="kinoo" type="email" required id="email" name="email" placeholder="juniorwangu@eg.com" class="mirema">
+
+        <label for="pass">Password</label>
+        <input class="kinoo" type="password" required id="pass" name="full_name" placeholder="*******" class="mirema">
+
+         <label for="weight">Weigth</label>
+        <input class="kinoo" type="number" required id="weight" name="weight" class="mirema">
+
+        <label for="weight">Weight</label>
+        <input class="kinoo" type="number" min="30" max="250" step="0.01" required id="weight" name="weight" placeholder="Weight in Kgs" class="mirema">
+
+        <label for="dob">Date of Birth</label>
+        <input class="kinoo" type="date" min="1940-01-01" max="2008-12-31" required id="dob" name="dob" class="mirema">
+
+
+        <!-- name must be the same for radio buttons -->
+         <hr>
+         
+<br>
+        <label for="">Select Your Gender</label>
+        <input type="radio" id="m" name="gender">
+        <label for="m">Female</label>
+
+<br>
+        <input type="radio" id="f" name="gender">
+        <label for="f">Male</label>
+
+<hr>
+<br>
+        <label for="">Select Your Favourite Food</label>
+        <input type="checkbox"  name="food" id="x">
+        <label for="x">Pizza</label>
+
+<br>
+        <input type="checkbox"  name="food" id="y">
+        <label for="y">Ugali</label>
+
+<br>
+        <input type="checkbox"  name="food" id="z">
+        <label for="z">Nduma</label>
+
+<br>
+        <input type="checkbox"  name="food" id="v">
+        <label for="v">Githeri</label>
+
+<br>
+        <input type="checkbox"  name="food" id="k">
+        <label for="k">Managu</label>
+<hr>
+        <br>
+        <label for="">Select Your County</label>
+        <select class="kinoo" name="" id="">
+            <option value="001">Mombasa</option>
+            <option value="029">Nandi</option>
+            <option value="035">Kericho</option>
+            <option value="015">Machakos</option>
+            <option value="037">Bomet</option>
+        </select>
+
+        <br>
+
+        <button>Register</button>
+
+    </form>
+</body>
+</html>
