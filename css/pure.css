@@ -1,0 +1,48 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.col {
+    border: 1px solid #444343;
+    width: 24%;
+}
+
+p {
+    text-align: center;
+}
+
+/* media queris allow for responsiveness of a website according to the size of the screen*/
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    p {
+        color: #8a2be2;
+    }
+
+    .col {
+        width: 48%;
+        margin-bottom: 12px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width:767px) and (orientation: landscape) {
+    .col {
+        width: 100%;
+        margin-bottom: 12px;
+
+    }
+
+    p {
+        color: #0000ff;
+    }
+}
+
+/* in bootstrap they are dealing with upto 5 devices size e.g small, midium, large, xtra large and xxl */
+
+/* CSS frameworks(Bootstrap 5, Tailwind, Bulma and Chakra) is a code that is already done which is 95% done */
+
+/* Python -- has django as its framework */
+/* Javascript has React called React */
